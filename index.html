@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<style>
+button {
+	background-color : black;
+	border : 5px ;
+	border-radius: 10%;
+	color : white;
+	width : 50px;
+	height: 50px;
+	font-size : 20px;
+	font-family : 
+	}
+.key{
+	text-align: center;
+	}
+#demo{
+	text-align: center;
+	vertical-align: middle;
+	}
+</style>
+<script>
+var string="";
+function printtxt(txt){
+string = string+txt;
+return document.getElementById("demo").innerHTML = string;
+}
+function printbs(){
+string = string.substring(0, string.length-1);
+return document.getElementById("demo").innerHTML = string;
+}
+</script>
+<body>
+
+<div class="key">
+<button onclick="printtxt('1')" >1</button>
+<button onclick="printtxt('2')" >2</button>
+<button onclick="printtxt('3')" >3</button>
+<button onclick="printtxt('4')" >4</button>
+<button onclick="printtxt('5')" >5</button>
+<button onclick="printtxt('6')" >6</button>
+<button onclick="printtxt('7')" >7</button>
+<button onclick="printtxt('8')" >8</button>
+<button onclick="printtxt('9')" >9</button>
+<button onclick="printtxt('0')" >0</button>
+<br/>
+<button onclick="printtxt('Q')" >Q</button>
+<button onclick="printtxt('W')" >W</button>
+<button onclick="printtxt('E')" >E</button>
+<button onclick="printtxt('R')" >R</button>
+<button onclick="printtxt('T')" >T</button>
+<button onclick="printtxt('Y')" >Y</button>
+<button onclick="printtxt('U')" >U</button>
+<button onclick="printtxt('I')" >I</button>
+<button onclick="printtxt('O')" >O</button>
+<button onclick="printtxt('P')" >P</button>
+<br/>&nbsp&nbsp&nbsp&nbsp&nbsp
+<button onclick="printtxt('A')" >A</button>
+<button onclick="printtxt('S')" >S</button>
+<button onclick="printtxt('D')" >D</button>
+<button onclick="printtxt('F')" >F</button>
+<button onclick="printtxt('G')" >G</button>
+<button onclick="printtxt('H')" >H</button>
+<button onclick="printtxt('J')" >J</button>
+<button onclick="printtxt('K')" >K</button>
+<button onclick="printtxt('L')" >L</button>
+<br/>&nbsp&nbsp&nbsp
+<button onclick="printtxt('Z')" >Z</button>
+<button onclick="printtxt('X')" >X</button>
+<button onclick="printtxt('C')" >C</button>
+<button onclick="printtxt('V')" >V</button>
+<button onclick="printtxt('B')" >B</button>
+<button onclick="printtxt('N')" >N</button>
+<button onclick="printtxt('M')" >M</button>
+<button style="width : 120px;" onclick="printbs()" >backspace</button>
+<br/>&nbsp&nbsp&nbsp
+<button style="width : 340px;"  onclick="printtxt('&nbsp')" >space</button>
+<button style="width : 120px;" onclick="printtxt('<br/>')" >enter</button>
+<br/>
+<br/>
+<br/>
+</div>
+<div id="demo">
+	
+</div>
+</body>
+</html>
